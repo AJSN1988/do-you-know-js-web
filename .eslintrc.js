@@ -46,7 +46,7 @@ module.exports = {
         // "comma-dangle": ["error", "never"],
         // "max-len": ["error", { "code": 150 }],
         // "consistent-return": "off",
-        // "no-console": "off",
+        "no-console": "off",
         // "operator-linebreak": "off",
         // "arrow-parens": "off",
         // "no-plusplus": "off",

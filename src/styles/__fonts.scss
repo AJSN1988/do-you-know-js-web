@@ -1,36 +1,31 @@
-// @font-face {
-//   font-family: "NunitoRegular";
-//   src: url("../assets/fonts/Nunito-Regular.ttf");
-// }
-// @font-face {
-//   font-family: "NunitoBold";
-//   src: url("../assets/fonts/Nunito-Bold.ttf");
-// }
-// @font-face {
-//   font-family: "NunitoBlack";
-//   src: url("../assets/fonts/Nunito-Black.ttf");
-// }
-// @font-face {
-//   font-family: "NunitoExtraBold";
-//   src: url("../assets/fonts/Nunito-ExtraBold.ttf");
-// }
-// @font-face {
-//   font-family: "NunitoSemiBold";
-//   src: url("../assets/fonts/Nunito-SemiBold.ttf");
-// }
-// @font-face {
-//   font-family: "PoppinsMedium";
-//   src: url("../assets/fonts/Poppins-Medium.ttf");
-// }
-// @font-face {
-//   font-family: "PoppinsRegular";
-//   src: url("../assets/fonts/Poppins-Regular.ttf");
-// }
-// @font-face {
-//   font-family: "PlayfairDisplayRegular";
-//   src: url("../assets/fonts/PlayfairDisplay-Regular.ttf");
-// }
-// @font-face {
-//   font-family: "PlayfairDisplayItalicBold";
-//   src: url("../assets/fonts/PlayfairDisplay-BoldItalic.ttf");
-// }
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans Light"), local("OpenSans-Light"), url("opensanslight.woff2") format("woff2"),
+    url("opensanslight.woff") format("woff"), url("opensanslight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans"), local("OpenSans"), url("opensans.woff2") format("woff2"), url("opensans.woff") format("woff"),
+    url("opensans.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans Semibold"), local("OpenSans-Semibold"), url("opensanssemibold.woff2") format("woff2"),
+    url("opensanssemibold.woff") format("woff"), url("opensanssemibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans Bold"), local("OpenSans-Bold"), url("opensansbold.woff2") format("woff2"),
+    url("opensansbold.woff") format("woff"), url("opensansbold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
