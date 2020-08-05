@@ -14,6 +14,13 @@
     <button @click="changeLocale('ru')">
       ru
     </button>
+    <hr>
+    <button @click="changeTheme('dark')">
+      Темная тема
+    </button>
+    <button @click="changeTheme('light')">
+      Светлая тема
+    </button>
   </section>
 </template>
 
@@ -38,6 +45,9 @@ export default {
   methods: {
     changeLocale(locale) {
       this.$i18n.locale = locale;
+    },
+    changeTheme(theme) {
+      console.log(theme);
     },
     ...mapMutations('AppState', ['themeMutation']),
   },
