@@ -1,15 +1,17 @@
 <template>
   <section class="home-page">
     <vue-headful
-      :title="localeGetter === 'ru' ? title.ru : title.en "
-      :lang="localeGetter"
+      :title="$t('common.metaTitle')"
+      :lang="getLocale"
+      :description="$t('common.metaDescription')"
+      :keywords="$t('common.metaKeywords')"
     />
-    <h1>Home page</h1>
-    <p>{{ localeGetter }}</p>
-    <button @click="localeMutation('en')">
+    <h1>{{ $t('pages.home.appName') }}</h1>
+    <p>{{ getLocale }}</p>
+    <button @click="changeLocale('en')">
       en
     </button>
-    <button @click="localeMutation('ru')">
+    <button @click="changeLocale('ru')">
       ru
     </button>
   </section>
@@ -25,19 +27,19 @@ export default {
     vueHeadful: VueHeadful,
   },
   data() {
-    return {
-      title: {
-        ru: 'А ты знаешь JavaScript ?',
-        en: 'Do you know JavaScript ?',
-      },
-    };
+    return {};
   },
   computed: {
+    getLocale() {
+      return this.$i18n.locale;
+    },
     ...mapGetters('AppState', ['themeGetter']),
-    ...mapGetters('AppState', ['localeGetter']),
   },
   methods: {
-    ...mapMutations('AppState', ['localeMutation']),
+    changeLocale(locale) {
+      this.$i18n.locale = locale;
+    },
+    ...mapMutations('AppState', ['themeMutation']),
   },
 };
 </script>
