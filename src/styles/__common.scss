@@ -1,0 +1,34 @@
+@import "__colors.scss";
+@import "__fonts.scss";
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 2rem;
+  margin: 25px 0;
+  &.light {
+    color: $black;
+  }
+  &.dark {
+    color: $light;
+  }
+}
+
+.description {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 1rem;
+  &.light {
+    color: $description_light;
+  }
+  &.dark {
+    color: $description_dark;
+  }
+}
