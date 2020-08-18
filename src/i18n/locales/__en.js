@@ -16,6 +16,11 @@ export default {
       waitingLabel: 'Preparing questions',
       errorLabel: 'Error. Error code 1',
     },
+    footer: {
+      writeMeButton: 'Write me',
+      policyButton: 'Privacy policy',
+      copyright: '© 2020 - 2020 Alexey Kineev',
+    },
   },
   elements: {},
 };

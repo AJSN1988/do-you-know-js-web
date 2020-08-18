@@ -16,6 +16,11 @@ export default {
       waitingLabel: 'Подготовка вопросов',
       errorLabel: 'Ошибка. Код ошибки 1',
     },
+    footer: {
+      writeMeButton: 'Написать автору',
+      policyButton: 'Политика конфеденциальности',
+      copyright: '© 2020 - 2020 Кинеев Алексей',
+    },
   },
   elements: {},
 };

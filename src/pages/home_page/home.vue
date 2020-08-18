@@ -56,7 +56,7 @@
       </section>
       <section class="app-controls"></section>
     </main>
-    <footer></footer>
+    <footer-component />
   </section>
 </template>
 
@@ -65,12 +65,14 @@ import VueHeadful from 'vue-headful';
 import { mapGetters, mapMutations } from 'vuex';
 
 import StartButton from '../../components/start_button/startButton.vue';
+import Footer from '../../components/footer/footer.vue';
 
 export default {
   name: 'HomePageComponent',
   components: {
     vueHeadful: VueHeadful,
     startButton: StartButton,
+    footerComponent: Footer,
   },
   data() {
     return {};

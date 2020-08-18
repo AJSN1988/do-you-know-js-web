@@ -1,0 +1,51 @@
+@import "../../styles/__colors";
+@import "../../styles/__fonts";
+
+footer {
+  &.light {
+    background-color: $app_background_light;
+    button {
+      color: $black;
+    }
+    .placeholder {
+      border-left: 1px solid $black;
+    }
+  }
+  &.dark {
+    background-color: $app_background_dark;
+    button {
+      color: $app_name_border_dark;
+    }
+    .placeholder {
+      border-left: 1px solid $app_name_border_dark;
+    }
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 7px 0;
+    font-family: "Open Sans";
+    font-size: 0.625rem;
+    .controls {
+      display: flex;
+      button {
+        text-transform: uppercase;
+        background: none;
+        border: none;
+        outline: none;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      .placeholder {
+        margin: 0 10px;
+      }
+    }
+    .copyright {
+      color: $grey;
+    }
+  }
+}
