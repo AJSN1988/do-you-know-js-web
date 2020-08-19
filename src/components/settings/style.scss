@@ -1,0 +1,34 @@
+@import "../../styles/_colors";
+@import "../../styles/_fonts";
+
+.app-settings {
+  align-self: center;
+  .annotation {
+    font-family: "Open Sans";
+    font-weight: 300;
+    margin-bottom: 25px;
+    &.light {
+      color: $black;
+    }
+    &.dark {
+      color: $light;
+    }
+  }
+  .controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &.light {
+      border-bottom: 1px solid $common_border_light;
+    }
+    &.dark {
+      border-bottom: 1px solid $common_border_dark;
+    }
+    .language-controls {
+      button {
+        background: none;
+        outline: none;
+      }
+    }
+  }
+}

@@ -54,7 +54,10 @@
           :error-label="$t('components.startButton.errorLabel')"
         />
       </section>
-      <section class="app-controls"></section>
+      <section class="app-controls">
+        <add-question />
+        <app-settings />
+      </section>
     </main>
     <footer-component />
   </section>
@@ -65,6 +68,8 @@ import VueHeadful from 'vue-headful';
 import { mapGetters, mapMutations } from 'vuex';
 
 import StartButton from '../../components/start_button/startButton.vue';
+import AddQuestion from '../../components/add_question/addQuestion.vue';
+import AppSettings from '../../components/settings/settings.vue';
 import Footer from '../../components/footer/footer.vue';
 
 export default {
@@ -72,6 +77,8 @@ export default {
   components: {
     vueHeadful: VueHeadful,
     startButton: StartButton,
+    addQuestion: AddQuestion,
+    appSettings: AppSettings,
     footerComponent: Footer,
   },
   data() {

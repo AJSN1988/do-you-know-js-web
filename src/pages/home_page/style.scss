@@ -55,5 +55,8 @@
   .app-controls {
     height: calc(40% - 32px);
     padding: 0 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }

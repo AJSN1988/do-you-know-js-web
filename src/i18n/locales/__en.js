@@ -16,6 +16,19 @@ export default {
       waitingLabel: 'Preparing questions',
       errorLabel: 'Error. Error code 1',
     },
+    addQuestion: {
+      header: 'Add new question',
+      annotation: 'Do you have a good example of a question you didn\'t find in this appendix? Please share it with the community.',
+      button: 'Add',
+    },
+    appSettings: {
+      header: 'App settings',
+      annotation: 'Selecting the application language and theme',
+      buttons: {
+        light: 'Day',
+        dark: 'Night',
+      },
+    },
     footer: {
       writeMeButton: 'Write me',
       policyButton: 'Privacy policy',

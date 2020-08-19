@@ -3,11 +3,21 @@
     class="add-question"
     :class="themeGetter"
   >
-    <h2>{{ $t('') }}</h2>
-    <div class="annotation">
-      {{ $t('') }}
+    <h2 :class="themeGetter">
+      {{ $t('components.addQuestion.header') }}
+    </h2>
+    <div
+      :class="themeGetter"
+      class="annotation"
+    >
+      {{ $t('components.addQuestion.annotation') }}
     </div>
-
+    <action-button
+      :label="$t('components.addQuestion.button')"
+      :text-in-uppercase="true"
+      padding="10px 65px"
+      :action="testAddQuestion.bind(this)"
+    />
   </section>
 </template>
 
@@ -22,6 +32,11 @@ export default {
   },
   computed: {
     ...mapGetters('AppState', ['themeGetter']),
+  },
+  methods: {
+    testAddQuestion() {
+      console.log('Add question');
+    },
   },
 };
 </script>

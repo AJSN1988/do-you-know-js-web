@@ -21,6 +21,26 @@ h1 {
   }
 }
 
+h2 {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin: 25px 0;
+  &.light {
+    color: $black;
+  }
+  &.dark {
+    color: $light;
+  }
+}
+
+button {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
 .description {
   font-family: "Open Sans";
   font-weight: 400;
